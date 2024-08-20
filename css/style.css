@@ -1,0 +1,338 @@
+/* Page some basic style */
+
+*{
+    margin:0;
+    padding:0;
+    /* background-color: black; */
+}
+a:hover{
+    text-decoration:none;
+    color: white;
+}
+a:hover{
+    text-decoration:none;
+    color: white;
+}
+.ParentTitle{
+        display: inline-flex;
+        /* border: 2px solid #00A4BD; */
+        padding: 10px;
+        border-radius: 2px 10px;
+        margin: 1em 0;
+}
+
+.expanding-border {
+    padding: 15px 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px 10px;
+    color: #333;
+}
+
+.expanding-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 2px solid #00A4BD;
+    border-radius: inherit;
+    box-sizing: border-box;
+    transition: width 2s;
+}
+
+.expanding-border:hover::before {
+    width: 100%;
+}
+
+
+/* This all css for header */
+
+.social-media{
+    justify-content: center;
+    display: flex;
+}
+
+.social-media p a span{
+    border: 1px solid #897e7e;
+    padding: 5px;
+    border-radius: 50%;
+    color: #897e7e;
+
+}
+
+.social-media p a span:hover{
+    border: 1px solid #050404;
+    color: #050404;
+}
+
+
+/* this all css gor banner */
+
+.bannerSlide{
+    max-width: 100%;
+    max-height: 87vh;
+}
+
+.cursorPointerButton{
+    cursor: pointer;
+}
+
+.carousel-control-next span, .carousel-control-prev span{
+    width: 50px;
+    height: 100px;
+    background-color: none;
+}
+.carousel-control-next, .carousel-control-prev{
+    background-color: transparent;
+    opacity: 0.7;
+    border: none;
+}
+
+.portfolio .card{
+    padding: 10px;
+    height: 55vh;
+
+}
+.portfolio .card img{
+    min-width: 100%;
+    min-height: 20vh;
+}
+
+.wordpreProject-caption{
+    display: flex;
+    align-items: center;
+    /* height: 0vh; */
+  
+    z-index: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.JavascriptProjectCard .card:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: all 1s;
+}
+
+.JavascriptProjectCard .card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+#carouselExampleCaptions{
+    position: static;
+    background-attachment: fixed;
+    height: 80vh;
+    background-image:url('../src/images/slider-images/wordpress-static-image.jpg');
+}
+.backgroundStaicImage{
+    /* position: static;
+    background-attachment: fixed;
+    height: 80vh;
+    background-image:url('../src/images/slider-images/wordpress-static-image.jpg'); */
+}
+
+.backgroundStaicImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+#carouselExampleCaptions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(45 41 41 / 79%); 
+    z-index: 0; 
+}
+
+.wordpreProject-caption {
+    position: relative;
+    z-index: 2; 
+    color: #fff; 
+}
+.wordpressProject {
+    position: relative;
+    z-index: 2; 
+    color: #fff; 
+}
+
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+  }
+  .footer .social-icons {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  .footer .social-icons a:hover {
+    color: #17a2b8;
+  }
+  .footer .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+
+/* infotmation section style */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+.info-box {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+    padding: 20px;
+}
+.info-box:last-child {
+    margin-right: 0;
+}
+.info-box:not(:last-child) {
+    border-right: 2px solid #ddd;
+}
+.info-number {
+    font-size: 3em;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.info-description {
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+
+/* Contact Us form Style */
+
+
+.contact-section {
+    padding: 50px 0;
+}
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info, .contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+}
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 15px;
+}
+.contact-info p {
+    margin-bottom: 30px;
+}
+.social-links a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #a19898;
+    text-decoration: none;
+}
+.social-links a:hover{
+    color: #333; 
+
+}
+.social-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.social-links a span {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.downloadCvButton, .contactMeButton{
+    justify-content: center;
+}
+
+.link-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+/* Some button css  */
+
+.btn-modern {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+}
+.btn-modern:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* primary color button */
+
+.btn-modern-primary{
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+    border-color: #007bff;
+}
+.btn-modern-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* light color button */
+
+.btn-modern-light{
+    background-color: rgba(108, 117, 125, 0.2);
+    color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-modern-light:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.logoImage{
+    width: auto;
+    height: 2.2em;
+}
