@@ -167,3 +167,75 @@ function fetchJavascriptCards(javascriptProjects) {
     }
 }
 fetchJavascriptCards(javascriptProjects);
+
+
+
+// let currentSlide1 = 0;
+// const slides1 = document.querySelector('.project-slider:nth-child(1) .slides');
+// const totalSlides1 = document.querySelectorAll('.project-slider:nth-child(1) .slides img').length;
+
+// document.querySelector('.project-slider:nth-child(1) .prev-btn').addEventListener('click', () => {
+//   currentSlide1 = (currentSlide1 === 0) ? totalSlides1 - 1 : currentSlide1 - 1;
+//   updateSlider(1);
+// });
+
+// document.querySelector('.project-slider:nth-child(1) .next-btn').addEventListener('click', () => {
+//   currentSlide1 = (currentSlide1 === totalSlides1 - 1) ? 0 : currentSlide1 + 1;
+//   updateSlider(1);
+// });
+
+// let currentSlide2 = 0;
+// const slides2 = document.querySelector('.project-slider:nth-child(2) .slides');
+// const totalSlides2 = document.querySelectorAll('.project-slider:nth-child(2) .slides img').length;
+
+// document.querySelector('.project-slider:nth-child(2) .prev-btn').addEventListener('click', () => {
+//   currentSlide2 = (currentSlide2 === 0) ? totalSlides2 - 1 : currentSlide2 - 1;
+//   updateSlider(2);
+// });
+
+// document.querySelector('.project-slider:nth-child(2) .next-btn').addEventListener('click', () => {
+//   currentSlide2 = (currentSlide2 === totalSlides2 - 1) ? 0 : currentSlide2 + 1;
+//   updateSlider(2);
+// });
+
+// function updateSlider(projectNumber) {
+//   const slides = document.querySelector(`.project-slider:nth-child(${projectNumber}) .slides`);
+//   const currentSlide = projectNumber === 1 ? currentSlide1 : currentSlide2;
+//   slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+// }
+
+
+
+// Get all the project sliders
+const sliders = document.querySelectorAll('.project-slider');
+
+sliders.forEach((slider) => {
+  const prevBtn = slider.querySelector('.prev-btn');
+  const nextBtn = slider.querySelector('.next-btn');
+  const slides = slider.querySelector('.slides');
+  const images = slider.querySelectorAll('.slides img');
+  const totalImages = images.length;
+  let currentIndex = 0;
+
+  function updateSliderPosition() {
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex === 0) {
+      currentIndex = totalImages - 1; // Go to the last image
+    } else {
+      currentIndex--; // Go to the previous image
+    }
+    updateSliderPosition();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex === totalImages - 1) {
+      currentIndex = 0; // Loop back to the first image
+    } else {
+      currentIndex++; // Go to the next image
+    }
+    updateSliderPosition();
+  });
+});
