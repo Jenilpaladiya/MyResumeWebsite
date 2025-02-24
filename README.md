@@ -2,6 +2,11 @@
 
 MyResumeWebsite is a personal portfolio website showcasing my resume, live projects, and JavaScript tasks completed during my learning path. This project is built using HTML, CSS, JavaScript, and Bootstrap for a responsive and interactive design.
 
+## Full Website page
+![Demo Image 7](ResumeWebsite/7.jpg)  
+&nbsp;  
+
+
 ## Live Demo
 [MyResumeWebsite Live Project](https://raw.githack.com/Jenilpaladiya/MyResumeWebsite/refs/heads/main/index.html)
 
@@ -34,8 +39,6 @@ Here are some preview images of the project:
 ![Demo Image 6](ResumeWebsite/6.jpg)  
 &nbsp;  
 
-![Demo Image 7](ResumeWebsite/7.jpg)  
-&nbsp;  
 
 
 ## How to Run the Project
