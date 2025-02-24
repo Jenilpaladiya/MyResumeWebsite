@@ -34,6 +34,9 @@ Here are some preview images of the project:
 ![Demo Image 6](ResumeWebsite/6.jpg)  
 &nbsp;  
 
+![Demo Image 7](ResumeWebsite/7.jpg)  
+&nbsp;  
+
 
 ## How to Run the Project
 1. Clone this repository:
